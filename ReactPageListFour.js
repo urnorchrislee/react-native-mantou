@@ -18,20 +18,21 @@ export default class extends Component {
             <TouchableOpacity style={styles.container}>
                 <View style={styles.topView}>
                     <Image
-                        source={{uri: 'http://7xrpno.com2.z0.glb.qiniucdn.com/o_1b87fo5s11pod12tapq314541nls9.png'}}
+                        source={{uri: this.props.data.pic_url}}
                         style={styles.iconStyle}
                     />
                     <Text style={{marginLeft: 8}}>{this.props.data.title}</Text>
                 </View>
                 <View>
                     <Image
-                        source={{uri: 'http://cdn.img.mtedu.com/sale/images/20170514210915_268922.jpg'}}                        style={styles.mainImgStyle}
+                        source={{uri: this.props.data.joincard[0].goods_cover}}
+                        style={styles.mainImgStyle}
                     />
                 </View>
                 <View style={styles.bottomView}>
                     <Text style={styles.bottomTitleStyle}>6招,教你写出让用户忍不住转发的好文案</Text>
                     <View style={styles.bottomViewDes}>
-                        <Text style={{color:'#999', fontSize:12}}>2294人购买</Text>
+                        <Text style={{color:'#999', fontSize:12}}>{this.props.data.joincard[0].sales_volume}人购买</Text>
                         <Text style={{color:'orange', fontSize:14}}>限时免费</Text>
                     </View>
                 </View>
@@ -46,8 +47,8 @@ const styles = StyleSheet.create({
         // alignItems: 'center',
         backgroundColor: '#F5FCFF',
         paddingBottom: 20,
-        borderBottomWidth: 1,
-        borderBottomColor: '#ccc'
+        borderBottomWidth: 10,
+        borderBottomColor: '#e0e0e0'
     },
     topView: {
         flexDirection: 'row',

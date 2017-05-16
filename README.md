@@ -4,11 +4,11 @@
 
 ## 环境 Requirements
 
-React Native: 0.44
+* React Native: 0.44
 
-Xcode: 8.3.2
+* Xcode: 8.3.2
 
-webstrom: 2016.2
+* webstrom: 2016.2
 
 ## 使用 Usage
 

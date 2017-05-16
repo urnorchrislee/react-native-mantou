@@ -2,8 +2,6 @@
 
 馒头 - 互联网抱团成长社群
 
----
-
 # 环境 Requirements
 
 React Native: 0.44
